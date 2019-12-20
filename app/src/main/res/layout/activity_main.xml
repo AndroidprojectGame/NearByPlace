@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/rl_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/rl_atm"
+                    android:orientation="vertical"
+                    android:background="@drawable/image_shape"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_atm"
+                        android:onClick="findAtm"
+                        android:layout_gravity="center"
+                        android:background="@drawable/atm"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="ATM"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/iv_atm"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_toRightOf="@+id/rl_atm"
+                    android:layout_toLeftOf="@+id/rl_policestation"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content">
+                </View>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/rl_policestation"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/image_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_pstation"
+                        android:onClick="findPolicStation"
+                        android:layout_gravity="center"
+                        android:background="@drawable/policestation"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="POLICE STATION"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#808080"
+                        android:layout_below="@+id/iv_pstation"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_second"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/rl_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/rl_metro"
+                    android:orientation="vertical"
+                    android:background="@drawable/image_shape"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_metro"
+                        android:onClick="findMetro"
+                        android:layout_gravity="center"
+                        android:background="@drawable/metro"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="METRO"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#808080"
+                        android:layout_below="@+id/iv_metro"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_toRightOf="@+id/rl_metro"
+                    android:layout_toLeftOf="@+id/rl_fule"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content">
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/rl_fule"
+                    android:orientation="vertical"
+                    android:background="@drawable/image_shape"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_flue"
+                        android:onClick="findPetrolPump"
+                        android:layout_gravity="center"
+                        android:background="@drawable/fule"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="FULE"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#808080"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/iv_flue"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/rl_third"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/rl_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/rl_hospital"
+                    android:background="@drawable/image_shape"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_hospital"
+                        android:layout_gravity="center"
+                        android:onClick="findHospital"
+                        android:background="@drawable/hospitalbed"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="HOSPITAL"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#808080"
+                        android:layout_below="@+id/iv_hospital"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_toRightOf="@+id/rl_hospital"
+                    android:layout_toLeftOf="@+id/rl_resturent"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content">
+                </View>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/rl_resturent"
+                    android:background="@drawable/image_shape"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_resturent"
+                        android:layout_gravity="center"
+                        android:onClick="findResturent"
+                        android:background="@drawable/resturent"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:text="RESTAURANT"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:background="#808080"
+                        android:layout_below="@+id/iv_resturent"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
